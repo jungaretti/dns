@@ -4,7 +4,7 @@ All of my DNS records, deployed with [Bacon](https://github.com/jungaretti/bacon
 
 ## Getting Started
 
-I use my [Deploy with Bacon](https://github.com/jungaretti/bacon-deploy-action) action to deploy DNS records from this repo to [Porkbun](https://porkbun.com/). To learn more about Bacon and its deploy action, see their repos:
+I use my [Deploy with Bacon](https://github.com/jungaretti/bacon-deploy-action) action to deploy DNS records from this repo to [Porkbun](https://porkbun.com/). To learn more about Bacon and its deploy action, see these repos:
 
 - [jungaretti/bacon](https://github.com/jungaretti/bacon)
 - [jungaretti/bacon-deploy-action](https://github.com/jungaretti/bacon-deploy-action)
