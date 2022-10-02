@@ -14,19 +14,13 @@ records:
     host: jungaretti.com
     content: google-site-verification=Jmb9KsqosrJktEYPAFSKF0SJYPHgsQikLSpxTmnU1bY
     ttl: 600
-  # Azure Static Web App
-  - type: ALIAS
-    host: jungaretti.com
-    content: green-forest-08be42d1e.azurestaticapps.net
-    ttl: 600
+  # Vercel
   - type: CNAME
     host: www.jungaretti.com
-    content: green-forest-08be42d1e.azurestaticapps.net
-    ttl: 600
-  - type: TXT
+    content: cname.vercel-dns.com
+  - type: A
     host: jungaretti.com
-    content: 730r9mqm3x2pms2m1y00zg8gfzy7vs63
-    ttl: 600
+    content: "76.76.21.21"
   # Fastmail
   - type: CNAME
     host: fm1._domainkey.jungaretti.com
