@@ -19,7 +19,7 @@ jobs:
           config: dns/jungaretti.com.yml
           create: false
           delete: false
-          version: v1.2.1
+          version: 1.2.1
       - uses: jungaretti/bacon-deploy-action@v1
         name: Deploy jamesungaretti.com
         with:
