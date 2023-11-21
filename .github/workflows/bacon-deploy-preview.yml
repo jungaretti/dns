@@ -19,11 +19,31 @@ jobs:
           config: dns/jungaretti.com.yml
           create: false
           delete: false
+          version: 1.2
       - uses: jungaretti/bacon-deploy-action@v1
-        name: Deploy jamesungaretti.com
+        name: Deploy jungaretti.com
         with:
           api-key: ${{ secrets.PORKBUN_API_KEY }}
           secret-key: ${{ secrets.PORKBUN_SECRET_KEY }}
-          config: dns/jamesungaretti.com.yml
+          config: dns/jungaretti.com.yml
           create: false
           delete: false
+          version: v1.2
+      - uses: jungaretti/bacon-deploy-action@v1
+        name: Deploy jungaretti.com
+        with:
+          api-key: ${{ secrets.PORKBUN_API_KEY }}
+          secret-key: ${{ secrets.PORKBUN_SECRET_KEY }}
+          config: dns/jungaretti.com.yml
+          create: false
+          delete: false
+          version: "1.2"
+      - uses: jungaretti/bacon-deploy-action@v1
+        name: Deploy jungaretti.com
+        with:
+          api-key: ${{ secrets.PORKBUN_API_KEY }}
+          secret-key: ${{ secrets.PORKBUN_SECRET_KEY }}
+          config: dns/jungaretti.com.yml
+          create: false
+          delete: false
+          version: "v1.2"
