@@ -14,7 +14,7 @@ records:
     host: www.jungaretti.com
     content: cname.vercel-dns.com
     ttl: 600
-  # Fastmail
+  # Fastmail (@jungaretti.com)
   - type: MX
     host: jungaretti.com
     content: in2-smtp.messagingengine.com
@@ -51,7 +51,7 @@ records:
     host: jungaretti.com
     content: v=spf1 include:spf.messagingengine.com ?all
     ttl: 600
-  # Fastmail
+  # Fastmail (@relay.jungaretti.com)
   - type: MX
     host: relay.jungaretti.com
     content: in1-smtp.messagingengine.com
