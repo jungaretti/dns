@@ -51,3 +51,39 @@ records:
     host: jungaretti.com
     content: v=spf1 include:spf.messagingengine.com ?all
     ttl: 600
+  # Fastmail
+  - type: MX
+    host: relay.jungaretti.com
+    content: in1-smtp.messagingengine.com
+    ttl: 600
+    priority: 10
+  - type: MX
+    host: relay.jungaretti.com
+    content: in2-smtp.messagingengine.com
+    ttl: 600
+    priority: 20
+  - type: MX
+    host: "*.relay.jungaretti.com"
+    content: in1-smtp.messagingengine.com
+    ttl: 600
+    priority: 10
+  - type: MX
+    host: "*.relay.jungaretti.com"
+    content: in2-smtp.messagingengine.com
+    ttl: 600
+  - type: CNAME
+    host: fm1._domainkey.relay.jungaretti.com
+    content: fm1.relay.jungaretti.com.dkim.fmhosted.com
+    ttl: 600
+  - type: CNAME
+    host: fm2._domainkey.relay.jungaretti.com
+    content: fm2.relay.jungaretti.com.dkim.fmhosted.com
+    ttl: 600
+  - type: CNAME
+    host: fm3._domainkey.relay.jungaretti.com
+    content: fm3.relay.jungaretti.com.dkim.fmhosted.com
+    ttl: 600
+  - type: TXT
+    host: relay.jungaretti.com
+    content: v=spf1 include:spf.messagingengine.com ?all
+    ttl: 600
