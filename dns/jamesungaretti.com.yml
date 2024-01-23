@@ -1,6 +1,6 @@
 domain: jamesungaretti.com
 records:
-  # Porkbun parking
+  # Porkbun
   - type: ALIAS
     host: jamesungaretti.com
     content: uixie.porkbun.com
