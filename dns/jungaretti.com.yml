@@ -15,6 +15,21 @@ records:
     content: cname.vercel-dns.com
     ttl: 600
   # Fastmail
+  - type: MX
+    host: jungaretti.com
+    content: in2-smtp.messagingengine.com
+    ttl: 600
+    priority: 20
+  - type: MX
+    host: "*.jungaretti.com"
+    content: in1-smtp.messagingengine.com
+    ttl: 600
+    priority: 10
+  - type: MX
+    host: "*.jungaretti.com"
+    content: in2-smtp.messagingengine.com
+    ttl: 600
+    priority: 20
   - type: CNAME
     host: fm1._domainkey.jungaretti.com
     content: fm1.jungaretti.com.dkim.fmhosted.com
@@ -32,21 +47,6 @@ records:
     content: in1-smtp.messagingengine.com
     ttl: 600
     priority: 10
-  - type: MX
-    host: jungaretti.com
-    content: in2-smtp.messagingengine.com
-    ttl: 600
-    priority: 20
-  - type: MX
-    host: "*.jungaretti.com"
-    content: in1-smtp.messagingengine.com
-    ttl: 600
-    priority: 10
-  - type: MX
-    host: "*.jungaretti.com"
-    content: in2-smtp.messagingengine.com
-    ttl: 600
-    priority: 20
   - type: TXT
     host: jungaretti.com
     content: v=spf1 include:spf.messagingengine.com ?all
