@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: jungaretti/bacon-deploy-action@v1.3
+      - uses: jungaretti/bacon-deploy-action@v1
         name: Deploy jungaretti.com
         with:
           api-key: ${{ secrets.PORKBUN_API_KEY }}
@@ -19,7 +19,7 @@ jobs:
           config: dns/jungaretti.com.yml
           create: false
           delete: false
-      - uses: jungaretti/bacon-deploy-action@v1.3
+      - uses: jungaretti/bacon-deploy-action@v1
         name: Deploy jamesungaretti.com
         with:
           api-key: ${{ secrets.PORKBUN_API_KEY }}
