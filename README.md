@@ -16,7 +16,7 @@ I use the [Deploy with Bacon](https://github.com/jungaretti/bacon-deploy-action)
 3. Add a step to each workflow file
    - [`bacon-deploy.yml`](.github/workflows/bacon-deploy.yml)
    - [`bacon-deploy-preview.yml`](.github/workflows/bacon-deploy-preview.yml)
-4. Make a pull request to preview deployment
+4. Create a pull request to preview deployment
 5. Merge the pull request to trigger deployment
 
 ### Update an Existing Domain
