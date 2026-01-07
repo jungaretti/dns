@@ -4,20 +4,23 @@ All of my DNS records, deployed with [Bacon](https://github.com/jungaretti/bacon
 
 ## Getting Started
 
-I use my [Deploy with Bacon](https://github.com/jungaretti/bacon-deploy-action) action to deploy DNS records from this repo to [Porkbun](https://porkbun.com/). To learn more about Bacon and its deploy action, see these repos:
+I use the [Deploy with Bacon](https://github.com/jungaretti/bacon-deploy-action) action to deploy DNS records from this repo to [Porkbun](https://porkbun.com/). To learn more about Bacon and its deploy action, see these repos:
 
 - [jungaretti/bacon](https://github.com/jungaretti/bacon)
 - [jungaretti/bacon-deploy-action](https://github.com/jungaretti/bacon-deploy-action)
 
-### Add New Domain
+### How to Deploy a New Domain
 
-1. Add a new YAML file
-1. Update the two workflows
-1. Make a PR to preview deployment
-1. Merge the PR to deploy
+1. [Enable API access for the domain on Porkbun](https://kb.porkbun.com/article/190-getting-started-with-the-porkbun-api)
+2. Create a new YAML file in the [`dns`](./dns/) directory
+3. Add a step to each workflow file
+   - [`bacon-deploy.yml`](.github/workflows/bacon-deploy.yml)
+   - [`bacon-deploy-preview.yml`](.github/workflows/bacon-deploy-preview.yml)
+4. Create a pull request to preview deployment
+5. Merge the pull request to trigger deployment
 
-### Update Existing Domain
+### Update an Existing Domain
 
-1. Update a YAML file
-1. Make a PR to preview deployment
-1. Merge the PR to deploy
+1. Update a YAML file in the [`dns`](./dns/) directory
+2. Make a pull request to preview deployment
+3. Merge the pull request to trigger deployment
