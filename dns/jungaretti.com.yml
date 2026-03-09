@@ -51,3 +51,8 @@ records:
     host: jungaretti.com
     content: v=spf1 include:spf.messagingengine.com ?all
     ttl: 600
+  # Galileo
+  - type: CNAME
+    host: galileo.jungaretti.com
+    content: galileo.westus3.cloudapp.azure.com
+    ttl: 600
