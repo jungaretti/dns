@@ -56,3 +56,8 @@ records:
     host: galileo.jungaretti.com
     content: galileo.westus3.cloudapp.azure.com
     ttl: 600
+  # Microsoft Entra ID
+  - type: TXT
+    host: jungaretti.com
+    content: MS=ms74353670
+    ttl: 600
