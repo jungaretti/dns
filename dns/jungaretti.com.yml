@@ -58,6 +58,6 @@ records:
     ttl: 600
   # Microsoft Entra ID
   - type: TXT
-    host: jungaretti.com
-    content: MS=ms74353670
+    host: mscloud.jungaretti.com
+    content: MS=ms18394178
     ttl: 600
