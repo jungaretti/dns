@@ -5,7 +5,9 @@ records:
     host: jamesungaretti.com
     content: uixie.porkbun.com
     ttl: 600
+    notes: Porkbun
   - type: CNAME
     host: "*.jamesungaretti.com"
     content: uixie.porkbun.com
     ttl: 600
+    notes: Porkbun
