@@ -17,13 +17,13 @@ jobs:
           api-key: ${{ secrets.PORKBUN_API_KEY }}
           secret-key: ${{ secrets.PORKBUN_SECRET_KEY }}
           config: dns/jungaretti.com.yml
-          create: false
-          delete: false
+          mode: dry-run
+          version: v3.0
       - uses: jungaretti/bacon-deploy-action@v2
         name: Deploy jamesungaretti.com
         with:
           api-key: ${{ secrets.PORKBUN_API_KEY }}
           secret-key: ${{ secrets.PORKBUN_SECRET_KEY }}
           config: dns/jamesungaretti.com.yml
-          create: false
-          delete: false
+          mode: dry-run
+          version: v3.0
