@@ -5,59 +5,72 @@ records:
     host: jungaretti.com
     content: google-site-verification=Jmb9KsqosrJktEYPAFSKF0SJYPHgsQikLSpxTmnU1bY
     ttl: 600
+    notes: Google
   # Vercel
   - type: A
     host: jungaretti.com
     content: 76.76.21.21
     ttl: 600
+    notes: Vercel
   - type: CNAME
     host: www.jungaretti.com
     content: cname.vercel-dns.com
     ttl: 600
+    notes: Vercel
   # Fastmail (@jungaretti.com)
   - type: MX
     host: jungaretti.com
     content: in1-smtp.messagingengine.com
     ttl: 600
     priority: 10
+    notes: Fastmail
   - type: MX
     host: jungaretti.com
     content: in2-smtp.messagingengine.com
     ttl: 600
     priority: 20
+    notes: Fastmail
   - type: MX
     host: "*.jungaretti.com"
     content: in1-smtp.messagingengine.com
     ttl: 600
     priority: 10
+    notes: Fastmail
   - type: MX
     host: "*.jungaretti.com"
     content: in2-smtp.messagingengine.com
     ttl: 600
     priority: 20
+    notes: Fastmail
   - type: CNAME
     host: fm1._domainkey.jungaretti.com
     content: fm1.jungaretti.com.dkim.fmhosted.com
     ttl: 600
+    notes: Fastmail
   - type: CNAME
     host: fm2._domainkey.jungaretti.com
     content: fm2.jungaretti.com.dkim.fmhosted.com
     ttl: 600
+    notes: Fastmail
   - type: CNAME
     host: fm3._domainkey.jungaretti.com
     content: fm3.jungaretti.com.dkim.fmhosted.com
     ttl: 600
+    notes: Fastmail
   - type: TXT
     host: jungaretti.com
     content: v=spf1 include:spf.messagingengine.com ?all
     ttl: 600
+    notes: Fastmail
   # Galileo
   - type: CNAME
     host: galileo.jungaretti.com
     content: galileo.westus3.cloudapp.azure.com
     ttl: 600
+    notes: Galileo virtual machine
   # Microsoft Entra ID
   - type: TXT
     host: mscloud.jungaretti.com
     content: MS=ms18394178
     ttl: 600
+    notes: Entra ID verification
