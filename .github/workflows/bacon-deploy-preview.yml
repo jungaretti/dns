@@ -9,16 +9,19 @@ on:
 jobs:
   preview:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
     steps:
       - uses: actions/checkout@v7
-      - uses: jungaretti/bacon-deploy-action@v2
+      - uses: jungaretti/bacon-deploy-action@comment-on-pr
         name: Deploy jungaretti.com
         with:
           api-key: ${{ secrets.PORKBUN_API_KEY }}
           secret-key: ${{ secrets.PORKBUN_SECRET_KEY }}
           config: dns/jungaretti.com.yml
           mode: dry-run
-      - uses: jungaretti/bacon-deploy-action@v2
+      - uses: jungaretti/bacon-deploy-action@comment-on-pr
         name: Deploy jamesungaretti.com
         with:
           api-key: ${{ secrets.PORKBUN_API_KEY }}
