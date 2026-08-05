@@ -9,6 +9,9 @@ on:
 jobs:
   preview:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
     steps:
       - uses: actions/checkout@v7
       - uses: jungaretti/bacon-deploy-action@v2
