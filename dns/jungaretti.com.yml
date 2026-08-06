@@ -1,11 +1,5 @@
 domain: jungaretti.com
 records:
-  # Google Search Console
-  - type: TXT
-    host: jungaretti.com
-    content: google-site-verification=Jmb9KsqosrJktEYPAFSKF0SJYPHgsQikLSpxTmnU1bY
-    ttl: 600
-    notes: Google verification
   # Vercel
   - type: A
     host: jungaretti.com
