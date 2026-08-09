@@ -9,12 +9,12 @@ records:
   # Vercel
   - type: A
     host: jungaretti.com
-    content: 76.76.21.21
+    content: 216.198.79.1
     ttl: 600
     notes: Vercel
   - type: CNAME
     host: www.jungaretti.com
-    content: cname.vercel-dns.com
+    content: bb6f841c21d7db39.vercel-dns-017.com.
     ttl: 600
     notes: Vercel
   # Fastmail (@jungaretti.com)
