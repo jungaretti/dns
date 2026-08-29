@@ -13,6 +13,7 @@ jobs:
     permissions:
       contents: read
     strategy:
+      max-parallel: 1
       matrix:
         domain:
           - jungaretti.com
