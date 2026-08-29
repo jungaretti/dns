@@ -14,6 +14,7 @@ jobs:
       contents: read
       pull-requests: write
     strategy:
+      max-parallel: 1
       matrix:
         domain:
           - jungaretti.com
