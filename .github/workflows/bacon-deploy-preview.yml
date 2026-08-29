@@ -8,23 +8,22 @@ on:
 
 jobs:
   preview:
+    name: Preview ${{ matrix.domain }}
     runs-on: ubuntu-latest
     permissions:
       contents: read
       pull-requests: write
+    strategy:
+      max-parallel: 1
+      matrix:
+        domain:
+          - jungaretti.com
+          - jamesungaretti.com
     steps:
       - uses: actions/checkout@v7
       - uses: jungaretti/bacon-deploy-action@v3
-        name: Preview jungaretti.com
         with:
           api-key: ${{ secrets.PORKBUN_API_KEY }}
           secret-key: ${{ secrets.PORKBUN_SECRET_KEY }}
-          config: dns/jungaretti.com.yml
-          mode: dry-run
-      - uses: jungaretti/bacon-deploy-action@v3
-        name: Preview jamesungaretti.com
-        with:
-          api-key: ${{ secrets.PORKBUN_API_KEY }}
-          secret-key: ${{ secrets.PORKBUN_SECRET_KEY }}
-          config: dns/jamesungaretti.com.yml
+          config: dns/${{ matrix.domain }}.yml
           mode: dry-run

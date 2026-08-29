@@ -8,22 +8,21 @@ on:
 
 jobs:
   deploy:
+    name: Deploy ${{ matrix.domain }}
     runs-on: ubuntu-latest
     permissions:
       contents: read
+    strategy:
+      max-parallel: 1
+      matrix:
+        domain:
+          - jungaretti.com
+          - jamesungaretti.com
     steps:
       - uses: actions/checkout@v7
       - uses: jungaretti/bacon-deploy-action@v3
-        name: Deploy jungaretti.com
         with:
           api-key: ${{ secrets.PORKBUN_API_KEY }}
           secret-key: ${{ secrets.PORKBUN_SECRET_KEY }}
-          config: dns/jungaretti.com.yml
-          mode: force
-      - uses: jungaretti/bacon-deploy-action@v3
-        name: Deploy jamesungaretti.com
-        with:
-          api-key: ${{ secrets.PORKBUN_API_KEY }}
-          secret-key: ${{ secrets.PORKBUN_SECRET_KEY }}
-          config: dns/jamesungaretti.com.yml
+          config: dns/${{ matrix.domain }}.yml
           mode: force
