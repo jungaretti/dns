@@ -62,12 +62,6 @@ records:
     content: v=spf1 include:spf.messagingengine.com ?all
     ttl: 600
     notes: Fastmail
-  # Galileo
-  - type: CNAME
-    host: galileo.jungaretti.com
-    content: galileo.westus3.cloudapp.azure.com
-    ttl: 600
-    notes: Galileo virtual machine
   # Microsoft Entra ID
   - type: TXT
     host: mscloud.jungaretti.com
